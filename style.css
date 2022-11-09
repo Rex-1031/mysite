@@ -1,10 +1,78 @@
+/*heading font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600;700&display=swap');
+/*Normal Font */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-/* Navbar */
-.navbarScroll.navbarDark{
-    background-color:  #000000;
+
+/*-----------------General Styling --------------------*/
+
+:root{
+    /* Colors */
+    --main-color: #008000;
+    --bg-light: #f5f5f5;
+    --bg-dark: #4f4e4e;
+
+    /* Fonts */
+    --main-font: 'IBM Plex Sans';
+    --header-font: 'IBM Plex Sans Condensed';
 }
 
-/* Main Background*/
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+
+#about, #services,#skills, #portfolio, #contact{
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+
+#contact{
+    padding-bottom: 4rem;
+}
+
+h1,h2,h3,h4, h5, h6, .nav-link{
+    font-family: var(--header-font), sans-serif;
+
+}
+p{
+    font-family: var(--main-font), sans-serif;
+}
+
+/* -------------------Navbar-------------------------- */
+.navbar, .footer{
+    margin:  0 ;
+    padding: 0;
+}
+.navbarScroll.navbarDark{
+    background-color:  #4f4e4e;
+}
+.nav-item .nav-link, .navbar-brand{
+    color:whitesmoke;
+
+    letter-spacing: .6px;
+    font-weight: bolder;
+}
+
+.nav-item .nav-link:hover{
+    color: #008000;
+}
+.active{
+    text-decoration: underline;
+    color:#008000;
+}
+.fa-bars{
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+
+/*------------------- Main Background---------------------*/
 .bgimage{
     /* add in a photo later */
     height: 100vh;
