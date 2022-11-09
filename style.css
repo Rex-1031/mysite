@@ -116,6 +116,21 @@ p{
     width: 100%;
 }
 
+.icon-group{
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.group-icon{
+    font-size: 36px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 .card-title{
     text-align: center;
 }
